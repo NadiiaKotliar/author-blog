@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все статьи | Авторские статьи</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-pen-nib"></i>
+                    <span>Авторский блог</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Главная
+                    </a>
+                    <a href="school.html" class="nav-link">
+                        <i class="fas fa-school"></i> О школе
+                    </a>
+                    <a href="articles.html" class="nav-link active">
+                        <i class="fas fa-newspaper"></i> Статьи
+                    </a>
+                    <a href="videos.html" class="nav-link">
+                        <i class="fas fa-video"></i> Видео
+                    </a>
+                    <a href="contacts.html" class="nav-link">
+                        <i class="fas fa-envelope"></i> Контакты
+                    </a>
+                </nav>
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 0;">
+        <section class="all-articles">
+            <h1 class="section-title">Все статьи</h1>
+            
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">Все категории</button>
+                <button class="filter-btn" data-filter="Писательство">Писательство</button>
+                <button class="filter-btn" data-filter="Литература">Литература</button>
+                <button class="filter-btn" data-filter="Технологии">Технологии</button>
+                <button class="filter-btn" data-filter="Творчество">Творчество</button>
+            </div>
+            
+            <div class="articles-grid" id="allArticlesGrid">
+                <!-- Статьи загружаются через JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-pen-nib"></i> Авторский блог</h3>
+                    <p>© 2023 Все права защищены</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Подпишитесь на обновления</h4>
+                    <p>Новые статьи каждую неделю</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="articles-script.js"></script>
+</body>
+</html>
